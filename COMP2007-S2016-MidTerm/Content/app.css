@@ -89,3 +89,31 @@ body {
     border: 1px solid #dddddd;
     cursor: pointer;
 }
+
+
+#form1 {
+    width: 60%;
+    margin: auto;
+}
+
+#Content2 {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    width: 80%;
+
+}
+
+#TodoDetails {
+    border: 2px black solid;
+    
+}
+
+#detailsRow {
+    padding: 10px;
+    background: lightblue;
+    opacity: 0.8;
+}
+
