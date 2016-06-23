@@ -15,7 +15,7 @@
        <asp:GridView runat="server" ID="TodoGridView" CssClass="table table-bordered table-striped table-hover"
            AutoGenerateColumns="false" OnRowDeleting="TodoGridView_RowDeleting"
                     DataKeyNames="TodoID" AllowPaging="true" PageSize="5" OnPageIndexChanging="TodoGridView_PageIndexChanging"
-                    AllowSorting="true" OnSorting="TodoGridView_Sorting" OnRowDataBound="TodoGridView_RowDataBound">
+                    AllowSorting="true" OnSorting="TodoGridView_Sorting" OnRowDataBound="TodoGridView_RowDataBound" ondatabound="TodoGridView_DataBound" ShowFooter="True">
         <Columns>
             <asp:BoundField DataField="TodoID" HeaderText="Todo ID" Visible="true" SortExpression="TodoID" />
                         <asp:BoundField DataField="TodoName" HeaderText="Todo Name" Visible="true" SortExpression="TodoName" />

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+Author: Christopher Netten
+Student #: 200230280
+Date: June 23 2016
+Description: This file will run the backend of TodoDetails it will add/edit Todo objects
+
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,15 +23,18 @@ namespace COMP2007_S2016_MidTerm
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
         }
 
+     
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/TodoList.aspx");
         }
 
-
+        
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {

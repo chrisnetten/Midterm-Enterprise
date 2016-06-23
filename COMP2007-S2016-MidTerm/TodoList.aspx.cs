@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+Author: Christopher Netten
+Student #: 200230280
+Date: June 23 2016
+Description: This file will run the backend of TodoList It will query the Todo objects and return them
+
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -68,7 +76,20 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        protected void TodoGridView_DataBound(object sender, EventArgs e)
+        {
+            // Rows in the GridView
+            TodoGridView.FooterRow.Cells[0].Text = String.Format("Total: {0}",
+                TodoGridView.Rows.Count.ToString());
 
+
+            // Make first cell in footer row span the entire row and hide the other cells
+            TodoGridView.FooterRow.Cells[0].ColumnSpan = TodoGridView.FooterRow.Cells.Count;
+            for (int i = 1; i < TodoGridView.FooterRow.Cells.Count; i++)
+            {
+                TodoGridView.FooterRow.Cells[i].Visible = false;
+            }
+        }
 
         protected void TodoGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
